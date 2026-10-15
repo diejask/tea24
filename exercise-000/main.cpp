@@ -35,7 +35,7 @@ int main(int argc, char **argv) {
 
     /* TEIL 1*/
     fmt::print("Value of x: {} and the address of x: {}\n", x, fmt::ptr(&x));
-    fmt::print("Value of p: {} and the address of p: {}\n", *p, fmt::ptr(&p));
+    fmt::print("Value of p: {} and the address of p: {}\n", *p, fmt::ptr(p));
 
     x = 42;
     fmt::print("Value of x: {}\n", x);
