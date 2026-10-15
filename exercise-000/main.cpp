@@ -42,7 +42,7 @@ int main(int argc, char **argv) {
     fmt::print("Value of p: {}\n", *p, fmt::ptr(&p));
 
     /*TEIL 2*/
-    fmt::println("Value of d: {} and the address of d: {}\n", *d, fmt::ptr(&d));
+    fmt::println("Value of d: {} and the address of d: {}", *d, fmt::ptr(&d));
     delete d;
 
     /*TEIL 3*/
@@ -53,7 +53,7 @@ int main(int argc, char **argv) {
     fmt::print("Value of y before: {}\n", y);
     changeValueByParameter(y);
     fmt::print("Value of y after: {}\n", y);
-    
+
     fmt::print("Value of address y before: {}\n", y);
     changeValueByPointer(&y);
     fmt::print("Value of address y after: {}\n", y);
